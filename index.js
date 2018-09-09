@@ -30,7 +30,7 @@ https.get('https://timetableapi.ptv.vic.gov.au/v3/route_types?devid=3000140&sign
 
 			response.on('end', () => {
 				
-				JSON.parse(data).routes.forEach((element) => {
+				JSON.parse(body).routes.forEach((element) => {
 					bbb[element.route_type].routes.push(element);
 				});
 				
