@@ -9,7 +9,7 @@ https.get('https://timetableapi.ptv.vic.gov.au/v3/routes?devid=3000140&signature
 	});
 	
 	response.on('end', () => {
-		fs.writeFile('routes.json', body, (error) => {
+		fs.writeFile('dist/routes.json', body, (error) => {
 			console.log('Wrote to file routes.json');
 		});
 	});
