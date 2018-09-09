@@ -1,7 +1,7 @@
 const fs = require('fs');
 const https = require('https');
 
-https.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY', (response) => {
+https.get('', (response) => {
 	var body = '';
 	
 	response.on('data', (data) => {
@@ -9,6 +9,8 @@ https.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY', (response) => 
 	});
 	
 	response.on('end', () => {
-		JSON.parse(body);
+		fs.writeFile('routes.json', body, (error) => {
+			console.log('Wrote to file routes.json');
+		});
 	});
 });
