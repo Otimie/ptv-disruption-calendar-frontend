@@ -1,7 +1,7 @@
 const fs = require('fs');
 const https = require('https');
 
-https.get('', (response) => {
+https.get('https://timetableapi.ptv.vic.gov.au/v3/routes?devid=3000140&signature=686ED631EA14A104B20862942E94D7E2BEB575A6', (response) => {
 	var body = '';
 	
 	response.on('data', (data) => {
