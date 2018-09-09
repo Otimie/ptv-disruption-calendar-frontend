@@ -39,5 +39,5 @@ https.get('https://timetableapi.ptv.vic.gov.au/v3/route_types?devid=3000140&sign
 				});
 			});
 		});
-	}
+	});
 });
