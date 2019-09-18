@@ -39,4 +39,4 @@ fetch('//otimie.github.io/ptv-disruption-calendar-frontend/routes.json').then((r
 		<App response={response} />,
 		document.getElementById('routes')
 	);
-}
+});
