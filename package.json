@@ -7,6 +7,7 @@
 		"@babel/preset-react": "7.0.0"
 	},
 	"scripts": {
-		"test": "node index.js"
+		"test": "node index.js",
+		"npx babel main.js --out-file dist/main.js --presets @babel/preset-react"
 	}
 }
