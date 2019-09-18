@@ -35,7 +35,8 @@ function App() {
 		"routes": [
 			{
 				"route_service_status": {
-					"description": "Good Service","timestamp":"2019-09-18T10:24:38.9565672+00:00"
+					"description": "Good Service",
+					"timestamp":"2019-09-18T10:24:38.9565672+00:00"
 				},
 				"route_type": 0,
 				"route_id": 1,
