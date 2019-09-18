@@ -1,13 +1,12 @@
 function Route(props) {
 	return (
-		<a class="list-group-item list-group-item-action" href="https://ptv-disruption-calendar.lachlanb.me/1">{props.routeName}</a>
+		<a class="list-group-item list-group-item-action" href="https://ptv-disruption-calendar.lachlanb.me/1">{props.route.route_name}</a>
 	);
 }
 
 function Routes(props) {
-	const routeNames = ["Alamein", "Belgrave"];
-	return routeNames.map((routeName) =>
-		<Route routeName={routeName} />
+	return props.routes.map((route) =>
+		<Route route={route} />
 	);
 }
 
