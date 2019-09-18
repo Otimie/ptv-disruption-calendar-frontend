@@ -1,12 +1,12 @@
-function Route() {
+function Route(props) {
 	return (
-		<a class="list-group-item list-group-item-action" href="https://ptv-disruption-calendar.lachlanb.me/1">Alamein</a>
+		<a class="list-group-item list-group-item-action" href="https://ptv-disruption-calendar.lachlanb.me/1">{props.routeName}</a>
 	);
 }
 
 function Routes() {
 	return (
-		<Route />
+		<Route routeName="Alamein" />
 	);
 }
 
@@ -23,7 +23,7 @@ function RouteType() {
 
 function RouteTypes() {
 	return (
-		<RouteType />
+		<RouteType routeTypeName="Train" />
 	);
 }
 
