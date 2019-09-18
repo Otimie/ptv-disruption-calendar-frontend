@@ -1,6 +1,6 @@
 function Route(props) {
 	return (
-		<a class="list-group-item list-group-item-action" href="https://ptv-disruption-calendar.lachlanb.me/{props.route.route_id}">{props.route.route_name}</a>
+		<a class="list-group-item list-group-item-action" href={'https://ptv-disruption-calendar.lachlanb.me/' + props.route.route_id}>{props.route.route_name}</a>
 	);
 }
 
