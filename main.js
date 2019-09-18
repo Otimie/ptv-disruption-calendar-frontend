@@ -4,7 +4,7 @@ function Route(props) {
 	);
 }
 
-function Routes() {
+function Routes(props) {
 	const routeNames = ["Alamein", "Belgrave"];
 	return routeNames.map((routeName) =>
 		<Route routeName={routeName} />
@@ -16,7 +16,7 @@ function RouteType(props) {
 		<div class="card my-3">
 			<div class="card-header">{props.routeType.route_type_name}</div>
 			<div class="list-group list-group-flush">
-				<Routes routes={props.routes} />
+				<Routes routes={props.routeType.routes} />
 			</div>
 		</div>
 	);
