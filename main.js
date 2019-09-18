@@ -14,7 +14,7 @@ function Routes() {
 function RouteType(props) {
 	return (
 		<div class="card my-3">
-			<div class="card-header">{props.route_type_name}</div>
+			<div class="card-header">{props.routeType.route_type_name}</div>
 			<div class="list-group list-group-flush">
 				<Routes routes={props.routes} />
 			</div>
