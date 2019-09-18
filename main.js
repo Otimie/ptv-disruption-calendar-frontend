@@ -6,7 +6,7 @@ function Route(props) {
 
 function Routes(props) {
 	return props.routes.map((route) =>
-		<Route route={route} />
+		<Route key={route.route_id} route={route} />
 	);
 }
 
@@ -23,7 +23,7 @@ function RouteType(props) {
 
 function RouteTypes(props) {
 	return props.routeTypes.map((routeType) =>
-		<RouteType routeType={routeType} />
+		<RouteType key={routeType.route_type} routeType={routeType} />
 	);
 }
 
