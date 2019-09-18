@@ -27,33 +27,16 @@ function RouteTypes(props) {
 	);
 }
 
-function App() {
-	const routeTypes = [
-		{
-			"route_type_name": "Train",
-			"route_type": 0,
-			"routes": [
-				{
-					"route_service_status": {
-						"description": "Good Service",
-						"timestamp":"2019-09-18T10:24:38.9565672+00:00"
-					},
-					"route_type": 0,
-					"route_id": 1,
-					"route_name": "Alamein",
-					"route_number": "",
-					"route_gtfs_id": "2-ALM"
-				}
-			]
-		}
-	];
-	
+function App(props) {
 	return (
-		<RouteTypes routeTypes={routeTypes} />
+		<RouteTypes routeTypes={props.response} />
 	);
 }
-
-ReactDOM.render(
-	<App />,
-	document.getElementById('routes')
-);
+fetch('//otimie.github.io/ptv-disruption-calendar-frontend/routes.json').then((response) => {
+	return response.json();
+}).then((response) => {
+	ReactDOM.render(
+		<App response={response} />,
+		document.getElementById('routes')
+	);
+}
