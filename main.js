@@ -5,8 +5,9 @@ function Route(props) {
 }
 
 function Routes() {
-	return (
-		<Route routeName="Alamein" />
+	const routeNames = ["Alamein", "Belgrave"];
+	return routeNames.map((routeName) =>
+		<Route routeName={routeName} />
 	);
 }
 
