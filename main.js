@@ -12,7 +12,7 @@ function Routes(props) {
 
 function RouteType(props) {
 	return (
-		<div class="card mb-3" style={'break-inside': 'avoid'}>
+		<div class="card mb-3" style={{'break-inside': 'avoid'}}>
 			<div className="card-header bg-light sticky-top">{props.routeType.route_type_name}</div>
 			<div className="list-group list-group-flush">
 				<Routes routes={props.routeType.routes} />
