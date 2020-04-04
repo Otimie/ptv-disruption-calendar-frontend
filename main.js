@@ -1,6 +1,6 @@
 function Route(props) {
 	return (
-		<a class="list-group-item list-group-item-action" href={'https://ptv-disruption-calendar.lachlanb.me/' + props.route.route_id}>{props.route.route_name}</a>
+		<a className="list-group-item list-group-item-action" href={'https://ptv-disruption-calendar.lachlanb.me/' + props.route.route_id}>{props.route.route_name}</a>
 	);
 }
 
@@ -13,8 +13,8 @@ function Routes(props) {
 function RouteType(props) {
 	return (
 		<div class="card my-3">
-			<div class="card-header">{props.routeType.route_type_name}</div>
-			<div class="list-group list-group-flush">
+			<div className="card-header">{props.routeType.route_type_name}</div>
+			<div className="list-group list-group-flush">
 				<Routes routes={props.routeType.routes} />
 			</div>
 		</div>
