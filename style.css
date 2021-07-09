@@ -1,0 +1,11 @@
+@media (min-width: 576px) {
+	#routes {
+		column-count: 2;
+	}
+}
+
+@media (min-width: 992px) {
+	#routes {
+		column-count: 3;
+	}
+}
